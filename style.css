@@ -1,0 +1,23 @@
+html, body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 2em;    
+}
+div.container{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+div.container:nth-of-type(odd){
+    background: rgba(0,0,0,0.8);
+    color:white;
+}
+div.container:nth-of-type(even){
+    background: rgba(85,85,221,0.6);
+    color:black;
+}
