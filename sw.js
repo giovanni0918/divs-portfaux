@@ -7,6 +7,7 @@ const PRECACHE_URLS = [
     '/divs-portfaux/style.css',
     '/divs-portfaux/script.js',
     '/divs-portfaux/manifest.json',
+    '/divs-portfaux/firebase.config.js',
     '/divs-portfaux/images/food-lover.svg',
     '/divs-portfaux/images/tech-enthusiast.svg',
     '/divs-portfaux/images/web-developer.svg',
@@ -45,7 +46,7 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-    if (event.request.url.startsWith(self.location.origin)) {
+    if (event.request.url.startsWith(self.location.origin) || event.request.url.match(/\.gstatic\.com\//) ) {
         event.respondWith(
             caches.match(event.request)
                 .then(cachedResponse => {
