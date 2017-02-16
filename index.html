@@ -35,16 +35,22 @@
         
     </head>
     <body>
-        <div class="container food-lover"><h2>Food Lover</h2></div>
-        <div class="container tech-enthusiast"><h2>Tech Enthusiast</h2></div>
-        <div class="container web-developer"><h2>Web Developer</h2></div>
+        <div class="container food-lover" id="food-lover">
+            <h2><a href="#tech-enthusiast">Food Lover</a></h2>
+        </div>
+        <div class="container tech-enthusiast" id="tech-enthusiast">
+            <h2><a href="#web-developer">Tech Enthusiast</a></h2>
+        </div>
+        <div class="container web-developer" id="web-developer">
+            <h2><a href="#contact-form">Web Developer</a></h2>
+        </div>
         <div class="container">foo</div>
         <div class="container">bar</div>
         <div class="container">bass</div>
         <div class="container">lorem</div>
         <div class="container">ipsum</div>
         <div class="container">
-            <form action="" class="contact-form" autocomplete="off">Contact me
+            <form action="" class="contact-form" id="contact-form" autocomplete="off">Contact me
                 <label>Name<input name="name" type="text" placeholder="name" required></label>
                 <label>Email<input name="email" type="email" placeholder="email" required></label>
                 <label>Subject<input name="subject" type="text" placeholder="subject" required></label>
