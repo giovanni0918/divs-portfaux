@@ -12,14 +12,49 @@ div.container{
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 div.container:nth-of-type(odd){
-    background: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
     color:white;
 }
 div.container:nth-of-type(even){
-    background: rgba(85,85,221,0.6);
+    background-color: rgba(85,85,221,0.6);
     color:black;
+}
+div.food-lover{
+    background: url('images/food-lover.svg');
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+div.tech-enthusiast{
+    background: url('images/tech-enthusiast.svg');
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+div.web-developer{
+    background: url('images/web-developer.svg');
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+div.container h2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.4);
+    color:white;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    text-align: center;
+    font-weight: 700;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Courier New, Courier, monospace;
 }
 form.contact-form{
     width: 100%;
