@@ -47,6 +47,12 @@ form.contact-form input, form.contact-form textarea {
 form.contact-form input:focus, form.contact-form textarea:focus, form.contact-form button#contact-form__button:focus{
     border: 0.1rem  solid #E91E63;
 }
+form.contact-form input[type='email'] {
+    text-transform: lowercase;
+}
+form.contact-form input[name='name'], form.contact-form input[name='subject'] {
+    text-transform: capitalize;
+}
 form.contact-form button#contact-form__button {
     height: 2rem;
     border: 0;
