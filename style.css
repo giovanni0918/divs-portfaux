@@ -47,6 +47,12 @@ div.web-developer{
     background-repeat: no-repeat;
     background-position: top right;
 }
+div.social {
+    background: url('images/web-developer.svg');
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    background-position: top left;
+}
 div.social h2{
     font-size: 1rem;
     text-transform: capitalize;
