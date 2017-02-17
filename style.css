@@ -95,7 +95,7 @@ form.contact-form input, form.contact-form textarea {
     padding: 0.5rem;
     border-radius: 0.125rem;
     border: 1px solid black;
-    font-size: 0.5rem;
+    font-size: 0.625rem;
 }
 form.contact-form input:focus, form.contact-form textarea:focus, form.contact-form button#contact-form__button:focus{
     border: 0.1rem  solid #E91E63;
