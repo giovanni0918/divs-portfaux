@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 button.disabled = false;
             })
             .catch((error) => alert('Your message could not be sent at the moment.'));
-        api.child(`/user-messages/${name.toLowerCase()}/${messageKey}/`).set(message);
+        api.child(`/user-messages/${name.replace(' ', '').toLowerCase()}/${messageKey}/`).set(message);
     };
 
     form.addEventListener('submit', onSubmit);
