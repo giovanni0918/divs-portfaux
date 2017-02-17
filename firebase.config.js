@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const form = document.querySelector('.contact-form');
     const onSubmit = (event) => {
         event.preventDefault();
+        const button = document.querySelector('#contact-form__button');
         const name = document.querySelector('input[name="name"]').value.replace(/[^A-z ]/g, '');
         const email = document.querySelector('input[name="email"]').value.toLowerCase();
         const subject = document.querySelector('input[name="subject"]').value.replace(/[^\w .+]/g, '');
@@ -21,8 +22,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         const message = { name, email, subject, body };
         let messageKey = api.child('messages').push().key;
-        api.child(`/messages/${messageKey}/`).set(message);
-        api.child(`/user-messages/${message.name.replace(/[^A-z]/g, '').toLowerCase()}/${messageKey}/`).set(message);
+
+        button.disabled = true;
+        api.child(`/messages/${messageKey}/`).set(message)
+            .then(() => {
+                alert('Message sent successfully.');
+                form.reset();
+                button.disabled = false;
+            })
+            .catch((error) => alert('Your message could not be sent at the moment.'));
+        api.child(`/user-messages/${name.toLowerCase()}/${messageKey}/`).set(message);
     };
 
     form.addEventListener('submit', onSubmit);
