@@ -1,0 +1,31 @@
+{
+  "name": "divs-portfaux",
+  "version": "1.0.0",
+  "description": "A fairly simple large-divs template for a portfolio site. Features basic SW, and web-app manifest.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovanni0918/divs-portfaux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giovanni0918/divs-portfaux/issues"
+  },
+  "homepage": "https://github.com/giovanni0918/divs-portfaux#readme",
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.10.0",
+    "json-loader": "^0.5.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "firebase": "^3.6.9"
+  }
+}

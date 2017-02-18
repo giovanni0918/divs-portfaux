@@ -4,10 +4,8 @@ const RUNTIME = 'runtime';
 const PRECACHE_URLS = [
     'index.html',
     '/divs-portfaux/',
-    '/divs-portfaux/style.css',
-    '/divs-portfaux/script.js',
-    '/divs-portfaux/manifest.json',
-    '/divs-portfaux/firebase.config.js',
+    '/divs-portfaux/bundle.js',
+    '/divs-portfaux/manifest.json',    
     '/divs-portfaux/images/food-lover.svg',
     '/divs-portfaux/images/tech-enthusiast.svg',
     '/divs-portfaux/images/web-developer.svg',

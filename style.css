@@ -29,20 +29,23 @@ div.container:nth-of-type(odd) a:hover, div.container:nth-of-type(odd) a:focus{
 div.container:nth-of-type(even) a:hover, div.container:nth-of-type(even) a:focus{
     text-decoration: underline;
 }
-div.food-lover{
+div.container.food-lover{
     background: url('images/food-lover.svg');
+    background-color: #25D197;
     /*background-size: cover;*/
     background-repeat: no-repeat;
     background-position: top right;
 }
-div.tech-enthusiast{
+div.container.tech-enthusiast{
     background: url('images/tech-enthusiast.svg');
     /*background-size: cover;*/
+    background-color:#1985A1;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: top right;
 }
-div.web-developer{
+div.container.web-developer{
     background: url('images/web-developer.svg');
+    background-color:#8D5A97;
     /*background-size: cover;*/
     background-repeat: no-repeat;
     background-position: top right;
@@ -132,4 +135,24 @@ ul.social-link-list {
 }
 ul.social-link-list li.link{
     margin: 0.5rem 0;
+}
+@media only screen and (min-width: 768px){
+    div.container.iam{
+        flex-direction: row;
+    }
+    div.container.iam div.container:nth-of-type(odd), div.container.iam div.container:nth-of-type(even){
+        background-size: 80%;
+        background-position: top center;
+    }
+}
+div.container.iam a:hover, div.container.iam a:focus{
+    color:white;
+}
+div.container.iam div.container:nth-of-type(odd), div.container.iam div.container:nth-of-type(even){
+        flex: 1;
+}
+@media only screen and (max-width: 768px){
+    div.container.iam div.container:nth-of-type(odd), div.container.iam div.container:nth-of-type(even){
+        min-height: 33vh;
+    }
 }

@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Divs Portfaux</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="author" content="Giovanni Orlando">
-        <meta name="description" content="A fairly simple large-divs template for a portfolio site." >
-        <meta name="theme-color" content="#5555dd">
-        <link rel="manifest" href="manifest.json">        
+<head>
+    <title>Divs Portfaux</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="author" content="Giovanni Orlando">
+    <meta name="description" content="A fairly simple large-divs template for a portfolio site.">
+    <meta name="theme-color" content="#5555dd">
+    <link rel="manifest" href="manifest.json">
 
-        <!-- Disable tap highlight on IE -->
-        <meta name="msapplication-tap-highlight" content="no">
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
 
-        <!-- Add to homescreen for Chrome on Android -->
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="application-name" content="Divs Portfaux">
-        <link rel="icon" href="images/icons/icon-192x192.png" sizes="192x192">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Divs Portfaux">
+    <link rel="icon" href="images/icons/icon-192x192.png" sizes="192x192">
 
-        <!-- Add to homescreen for Safari on iOS -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="Divs Portfaux">
-        <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" sizes="144x144">
-        <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" sizes="152x152">
-        <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" sizes="192x192">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Divs Portfaux">
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" sizes="192x192">
 
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
-        <meta name="msapplication-TileColor" content="#5555dd">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#5555dd">
 
-        <link href="style.css" rel="stylesheet">        
-        <script async src="script.js"></script>
-        <script defer src="https://www.gstatic.com/firebasejs/3.6.9/firebase-app.js"></script>
-        <script defer src="https://www.gstatic.com/firebasejs/3.6.9/firebase-database.js"></script>
-        <script defer src="firebase.config.js"></script>
-        
-    </head>
-    <body>
-        <div class="container social" id="social">
-            <h2>Follow me on 
-                <nav class="nav">
-                    <ul class="social-link-list">
-                        <li class="link"><a href="https://github.com/giovanni0918" target="_blank" rel="noopener">Github: @giovanni0918</a></li>
-                        <li class="link"><a href="https://twitter.com/giovanni0918" target="_blank" rel="noopener">Twitter: @giovanni0918</a></li>
-                        <li class="link"><a href="https://pinterest.com/giovanniorlando" target="_blank" rel="noopener">Pinterest: @giovanniorlando</a></li>                        
-                    </ul>
-                </nav>
-            </h2>
-        </div>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container social" id="social">
+        <h2>Follow me on
+            <nav class="nav">
+                <ul class="social-link-list">
+                    <li class="link"><a href="https://github.com/giovanni0918" target="_blank" rel="noopener">Github: @giovanni0918</a></li>
+                    <li class="link"><a href="https://twitter.com/giovanni0918" target="_blank" rel="noopener">Twitter: @giovanni0918</a></li>
+                    <li class="link"><a href="https://pinterest.com/giovanniorlando" target="_blank" rel="noopener">Pinterest: @giovanniorlando</a></li>
+                </ul>
+            </nav>
+        </h2>
+    </div>
+    <div class="container iam">
         <div class="container food-lover" id="food-lover">
             <h2><a href="#tech-enthusiast">Food Lover</a></h2>
         </div>
@@ -58,19 +55,18 @@
         <div class="container web-developer" id="web-developer">
             <h2><a href="#contact-form">Web Developer</a></h2>
         </div>
-        <div class="container">foo</div>
-        <div class="container">bar</div>
-        <div class="container">bass</div>
-        <div class="container">lorem</div>
-        <div class="container">ipsum</div>
-        <div class="container">
-            <form action="" class="contact-form" id="contact-form" autocomplete="off">Contact me
-                <label>Name<input name="name" type="text" placeholder="name" required></label>
-                <label>Email<input name="email" type="email" placeholder="email" required></label>
-                <label>Subject<input name="subject" type="text" placeholder="subject" required></label>
-                <label>Body<textarea name="body" cols="80" rows="5" maxlength="400" placeholder="body" required></textarea></label>
-                <label aria-label="Submit Contact Form"><button type="submit" id="contact-form__button">Submit</button></label>
-            </form>
-        </div>
-    </body>
+    </div>
+    <div class="container">lorem</div>
+    <div class="container">ipsum</div>
+    <div class="container">
+        <form action="" class="contact-form" id="contact-form" autocomplete="off">Contact me
+            <label>Name<input name="name" type="text" placeholder="name" required></label>
+            <label>Email<input name="email" type="email" placeholder="email" required></label>
+            <label>Subject<input name="subject" type="text" placeholder="subject" required></label>
+            <label>Body<textarea name="body" cols="80" rows="5" maxlength="400" placeholder="body" required></textarea></label>
+            <label aria-label="Submit Contact Form"><button type="submit" id="contact-form__button">Submit</button></label>
+        </form>
+    </div>
+    <script defer src="bundle.js"></script>
+</body>
 </html>
