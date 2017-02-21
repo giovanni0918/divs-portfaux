@@ -136,7 +136,7 @@ ul.social-link-list {
 ul.social-link-list li.link{
     margin: 0.5rem 0;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
     div.container.iam{
         flex-direction: row;
     }
